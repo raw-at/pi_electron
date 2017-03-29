@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>pi electron</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/pi.css">
+    </head>
+    <body>
+        <header>
+            <!--<span>Author : <a href="http://glennsmith.me" target="_blank">Glenn Smith</a></span>-->
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </header>
+
+        <div class="menu">
+            <ul>
+                <a href="#"><li>LINK ONE</li></a>
+                <a href="#"><li>LINK TWO</li></a>
+                <a href="#"><li>LINK THREE</li></a>
+                <a href="#"><li>LINK FOUR</li></a>
+                <a href="#"><li>LINK FIVE</li></a>
+            </ul>
+        </div> 
+
+
+        <div id="myCarousel" class="carousel slide">
+        
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"</li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill">
+                    <img src="img/first-min.jpg" alt="first image">
+                </div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill">
+                    <img src="img/second-min.jpg" alt="second image">
+
+                </div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill">
+                    <img src="img/third-min.jpg" alt="third image">
+
+                </div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+
+        <script>window.$ = window.jQuery = require('./js/jquery-3.2.0.min.js');</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>require('./pi.js')</script>
+        <script>
+            require('./renderer.js');
+        </script>
+    </body>
+</html>
