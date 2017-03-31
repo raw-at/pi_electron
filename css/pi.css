@@ -1,6 +1,6 @@
 header{
 	width:100%; 
-	background:#ffffff; 
+	background: sandybrown; 
 	height:60px; 
 	line-height:60px;
 	border-bottom:1px solid #dddddd;
@@ -21,6 +21,7 @@ header{
   z-index:10000000000000;
 }
 
+
 .cross{
   background:none;
   position:absolute;
@@ -36,14 +37,50 @@ header{
   outline:none;
   z-index:10000000000000;
 }
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
-.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
-.menu ul li a:hover {  color: #666; text-decoration:none;}
-.menu a{text-decoration:none; color:#666;}
-.menu a:hover{text-decoration:none; color:#666;}
+.menu{
+    z-index:1000000; 
+    font-weight:bold; 
+    font-size:0.8em; 
+    width:100%; 
+    background:#f1f1f1;  
+    position:relative; 
+    text-align:center; 
+    font-size:12px;
+}
+.menu ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    list-style-image: none;
+}
+.menu li {
+    display: block;   
+    padding:15px 0 15px 0; 
+    border-bottom:#dddddd 1px solid;
+}
+.menu li:hover{
+    display: block;    
+    background: sandybrown; 
+    padding:15px 0 15px 0; 
+    border-bottom:#dddddd 1px solid;
+}
+.menu ul li a { 
+    text-decoration:none;  
+    margin: 0px; 
+    color:#666;
+}
+.menu ul li a:hover {  
+    color: #666; 
+    text-decoration:none;
+}
+.menu a{
+    text-decoration:none; 
+    color:#666;
+}
+.menu a:hover{
+    text-decoration:none; 
+    color:#666;
+    }
 
 .glyphicon-home{
   color:white; 
@@ -54,3 +91,55 @@ header{
 header{display:inline-block; font-size:12px;}
 span{padding-left:20px;}
 a{color:#336699;}
+
+
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+
+div.tabs-item{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+
+}
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tabs-item button {
+    background:#ccc;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+    width: 195px;
+}
+
+/* Change background color of buttons on hover */
+div.tabs-item button:hover {
+    background: sandybrown;
+}
+
+/* Create an active/current tablink class */
+div.tabs-item button.active {
+    background-color:sandybrown;
+}
+
+/* Style the tab content */
+div.tabcontent {
+    position: top;
+    top: 70px;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none; 
+}

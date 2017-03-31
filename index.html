@@ -5,26 +5,32 @@
         <title>pi electron</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/pi.css">
+
+        
     </head>
     <body>
         <header>
-            <!--<span>Author : <a href="http://glennsmith.me" target="_blank">Glenn Smith</a></span>-->
-            <button class="hamburger">&#9776;</button>
+            
+            <button class="hamburger" onclick="wifi_access()">&#9776;</button>
             <button class="cross">&#735;</button>
+            
+             
         </header>
 
         <div class="menu">
-            <ul>
-                <a href="#"><li>LINK ONE</li></a>
-                <a href="#"><li>LINK TWO</li></a>
-                <a href="#"><li>LINK THREE</li></a>
-                <a href="#"><li>LINK FOUR</li></a>
-                <a href="#"><li>LINK FIVE</li></a>
+            <ul id="demo">
+                <!--<a href="#"><li class="menu_item"></li></a>-->
+                <!--<a href="#"><li class="menu_item"></li></a>
+                <a href="#"><li class="menu_item"></li></a>
+                <a href="#"><li class="menu_item"></li></a>
+                <a href="#"><li class="menu_item"></li></a>
+                <a href="#"><li class="menu_item"></li></a>-->
             </ul>
         </div> 
+        <!--<button class="btn btn-primary" onclick="wifi_access()">&#9776;</button>-->
 
 
-        <div id="myCarousel" class="carousel slide">
+        <!--<div id="myCarousel" class="carousel slide">
         
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"</li>
@@ -68,12 +74,41 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
+    </div>-->
+<div class="tabs-item">
+    
+        <button class="tablinks" onclick="openCity(event, 'London')">Home Automation</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Security</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Settings</button>
+        <button class="tablinks" onclick="openCity(event, 'Delhi')">Profile</button>
+    
+</div>
+
+    <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
     </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
 
 
         <script>window.$ = window.jQuery = require('./js/jquery-3.2.0.min.js');</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>require('./pi.js')</script>
+        <script src="./pi2.js"></script>
+        
+
+
+
         <script>
             require('./renderer.js');
         </script>
