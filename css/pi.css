@@ -38,7 +38,7 @@ header{
   z-index:10000000000000;
 }
 .menu{
-    z-index:1000000; 
+    z-index:100; 
     font-weight:bold; 
     font-size:0.8em; 
     width:100%; 
@@ -48,28 +48,30 @@ header{
     font-size:12px;
 }
 .menu ul {
+    display: block;
     margin: 0; 
     padding: 0; 
     list-style-type: none; 
     list-style-image: none;
 }
-.menu li {
+.menu button{
     display: block;   
     padding:15px 0 15px 0; 
     border-bottom:#dddddd 1px solid;
+    width: 100%;
 }
-.menu li:hover{
+.menu button:hover{
     display: block;    
     background: sandybrown; 
     padding:15px 0 15px 0; 
     border-bottom:#dddddd 1px solid;
 }
-.menu ul li a { 
+/*.menu ul button a { 
     text-decoration:none;  
     margin: 0px; 
     color:#666;
 }
-.menu ul li a:hover {  
+.menu ul button a:hover {  
     color: #666; 
     text-decoration:none;
 }
@@ -80,7 +82,7 @@ header{
 .menu a:hover{
     text-decoration:none; 
     color:#666;
-    }
+    }*/
 
 .glyphicon-home{
   color:white; 
@@ -99,8 +101,10 @@ body {font-family: "Lato", sans-serif;}
 
 div.tabs-item{
     position: fixed;
+    display: inline;
     bottom: 0px;
     width: 100%;
+    z-index: 200;
 
 
 }
@@ -121,7 +125,7 @@ div.tabs-item button {
     transition: 0.3s;
     font-size: 17px;
     font-weight: bold;
-    width: 195px;
+    /*width: 341px;*/
 }
 
 /* Change background color of buttons on hover */

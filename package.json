@@ -9,6 +9,7 @@
   "author": "neeraj",
   "license": "ISC",
   "dependencies": {
+    "dialogs": "^1.1.19",
     "electron": "^1.6.2"
   }
 }
